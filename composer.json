@@ -1,6 +1,7 @@
 {
     "require": {
-        "vlucas/phpdotenv": "*"
+        "vlucas/phpdotenv": "*",
+        "curl/curl": "^1.8"        
     },
     "autoload": {
         "psr-4": {
