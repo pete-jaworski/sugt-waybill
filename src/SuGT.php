@@ -17,27 +17,19 @@ class SuGT implements \Appe\SuGT\ERPInterface
      * @var \Appe\LoggerInterface 
      */
     protected $logger;
-    
-    /**
-     * @var \Dotenv\Dotenv
-     */
-    protected $dotenv;
 
     /**
      * Constructor
      * 
      * @param \COM $com
      * @param \Appe\LoggerInterface $logger
-     * @param \Dotenv\Dotenv $dotenv
      */
     public function __construct(
             \COM $com, 
-            \Appe\LoggerInterface $logger, 
-            \Dotenv\Dotenv $dotenv
+            \Appe\SuGT\LoggerInterface $logger
     )
     {
         $this->com = $com;
-        $this->dotenv = $dotenv;
         $this->logger = $logger;
     }
 
