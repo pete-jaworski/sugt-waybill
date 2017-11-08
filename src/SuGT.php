@@ -29,8 +29,8 @@ class SuGT implements \Appe\SuGT\ERPInterface
             \Appe\SuGT\LoggerInterface $logger
     )
     {
-        $this->com = $com;
-        $this->logger = $logger;
+        $this->com      = $com;
+        $this->logger   = $logger;
     }
 
         /**
