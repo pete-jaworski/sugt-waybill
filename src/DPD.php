@@ -8,6 +8,12 @@ namespace Appe\SuGT;
  */
 class DPD implements \Appe\SuGT\CourierInterface
 {
+    
+    
+    public function __construct()
+    {
+        
+    }
     /**
      * Connects to Courier API
      * 
