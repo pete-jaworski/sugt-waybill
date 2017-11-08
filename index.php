@@ -7,5 +7,5 @@ $waybill = new \Appe\SuGT\WaybillGenerator(
         new \Appe\SuGT\DPD()
         );
 
-
+echo "ok 123";
 print_r($waybill->generate(555));
