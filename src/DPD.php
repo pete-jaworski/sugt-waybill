@@ -8,12 +8,21 @@ namespace Appe\SuGT;
  */
 class DPD implements \Appe\SuGT\CourierInterface
 {
-    
-    
-    public function __construct()
+    /**
+     * @var \Appe\SuGT\DatabaseInterface
+     */
+    protected $db;
+
+    /**
+     * Constructor
+     * @param \Appe\SuGT\DatabaseInterface $db
+     */
+    public function __construct(\Appe\SuGT\DatabaseInterface $db)
     {
-        
+        $this->db = $db;
     }
+    
+    
     /**
      * Connects to Courier API
      * 
